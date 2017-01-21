@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Add Recipes</title>
+		
+		<!-- Begin jquery -->	
+		<script src="js/jquery.js"></script>
+		<script src="js/jqueryui.js"></script>
+		<!-- End jquery -->
+	
+		<script src="js/header.js"></script>
+		<script src="js/addrecipe.js"></script>
+		
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #111;
+			}
+
+			.active {
+				background-color: #4CAF50;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<br/>
+		<form >
+		
+		
+			<label>Title</label><br/>
+			<input  name="recipeTitle" id="recipeTitle" type="text"><br/>
+			<label>Author</label><br/>
+			<input  name="recipeAuthor" id="recipeAuthor" type="text"><br/>
+			<label>Ingredients</label><br/>
+			<textarea rows="20" cols="40"  name="recipeIngredients" id="recipeIngredients" type="text"></textarea><br/>
+			<label>Directions</label><br/>
+			<textarea rows="10" cols="60" name="recipeDirections" id="recipeDirections" type="text"></textarea><br/><br/>
+			<button name="addRecipe" id="addRecipe">Add Recipe</button>
+		
+		</form>
+
+	</body>
+</html> 
